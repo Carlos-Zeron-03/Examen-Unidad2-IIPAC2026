@@ -5,10 +5,11 @@ namespace FerreteriaAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ResultadoController : ControllerBase
+    public class PedidosController : ControllerBase
     {
         [HttpPost("cotizar")]
         public IActionResult Cotizar(Pedido pedido)
+        
         {
             double SubtotalGeneral = 0;
             int totalUnidades = 0;
